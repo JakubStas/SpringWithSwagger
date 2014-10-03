@@ -40,9 +40,9 @@ import com.wordnik.swagger.annotations.ApiResponse;
 import com.wordnik.swagger.annotations.ApiResponses;
 
 /**
- * REST endpoint for simple user and rating manipulation.
+ * REST endpoint for user manipulation.
  */
-@Api(value = "users", description = "Endpoint for simple user management")
+@Api(value = "users", description = "Endpoint for user management")
 @Path("/users")
 public class UsersEndpoint {
 
