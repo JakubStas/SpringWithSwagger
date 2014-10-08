@@ -1,4 +1,4 @@
-SpringWithSwagger
+Spring with Swagger example
 =================
 This project is a simple example of integration of Swagger with Spring application (with Jersey 2).
 
