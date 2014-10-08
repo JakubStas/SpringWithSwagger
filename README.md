@@ -4,12 +4,12 @@ This project is a simple example of integration of Swagger with Spring applicati
 
 About
 -----
-This project was created to enhance my microseries on integration of Swagger with Jersey 2 in Spring application. For further information check out following post:
+This project was created to enhance my microseries on integration of Swagger with Jersey 2 in Spring application. For further information check out following posts from series called Spring Rest API with Swagger:
  
-1. [SpringRest API with Swagger - Integration and configuration](http://jakubstas.com/spring-jersey-swagger-configuration)
-2. [Spring Rest API with Swagger - Creating documentation](http://jakubstas.com/spring-jersey-swagger-create-documentation)
-3. [Spring Rest API with Swagger - Exposing documentation](http://jakubstas.com/spring-jersey-swagger-expose-documentation)
-4. [Spring Rest API with Swagger - Fine-tuning exposed documentation](http://jakubstas.com/spring-jersey-swagger-fine-tuning-exposed-documentation)
+1. [Integration and configuration](http://jakubstas.com/spring-jersey-swagger-configuration)
+2. [Creating documentation](http://jakubstas.com/spring-jersey-swagger-create-documentation)
+3. [Exposing documentation](http://jakubstas.com/spring-jersey-swagger-expose-documentation)
+4. [Fine-tuning exposed documentation](http://jakubstas.com/spring-jersey-swagger-fine-tuning-exposed-documentation)
 
 Try it out!
 -----------
