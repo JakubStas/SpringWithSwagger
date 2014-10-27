@@ -77,7 +77,7 @@ public class AccessHiddenModelConverter extends SwaggerSchemaConverter {
 
         if (StringUtils.hasText(propertyName)) {
             modelOption.get().properties().remove(propertyName);
-            log.info("Successfully hidden API model property '" + propertyName + "'");
+            log.debug("Successfully hidden API model property '" + propertyName + "'");
         }
     }
 
