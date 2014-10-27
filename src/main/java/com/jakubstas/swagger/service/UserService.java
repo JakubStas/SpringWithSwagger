@@ -30,33 +30,33 @@ public class UserService {
 
     private final Map<String, User> users = new ConcurrentHashMap<String, User>();
 
-    private final Resource avatarJakub = new ClassPathResource("avatars/1.png");
+    private final Resource avatarStan = new ClassPathResource("avatars/1.png");
 
-    private final Resource avatarPeter = new ClassPathResource("avatars/2.png");
+    private final Resource avatarKyle = new ClassPathResource("avatars/2.png");
 
     @PostConstruct
     public void init() throws IOException {
-        final byte[] avatarJakubBytes = Files.readAllBytes(avatarJakub.getFile().toPath());
-        final byte[] avatarPeterBytes = Files.readAllBytes(avatarPeter.getFile().toPath());
+        final byte[] avatarStanBytes = Files.readAllBytes(avatarStan.getFile().toPath());
+        final byte[] avatarKyleBytes = Files.readAllBytes(avatarKyle.getFile().toPath());
 
-        final User userJakub = new User();
-        userJakub.setUserName("tyler");
-        userJakub.setFirstName("Tyler");
-        userJakub.setSurname("Durden");
-        userJakub.setEmail("tyler@fc.com");
-        userJakub.setAvatar(avatarJakubBytes);
-        userJakub.setLastUpdated(new Date());
+        final User userStan = new User();
+        userStan.setUserName("stan");
+        userStan.setFirstName("Stanley");
+        userStan.setSurname("Marsh");
+        userStan.setEmail("stan@jakubstas.com");
+        userStan.setAvatar(avatarStanBytes);
+        userStan.setLastUpdated(new Date());
 
-        final User userPeter = new User();
-        userPeter.setUserName("user2");
-        userPeter.setFirstName("Peter");
-        userPeter.setSurname("Jones");
-        userPeter.setEmail("peter@jakubstas.com");
-        userPeter.setAvatar(avatarPeterBytes);
-        userPeter.setLastUpdated(new Date());
+        final User userKyle = new User();
+        userKyle.setUserName("kyle");
+        userKyle.setFirstName("Kyle");
+        userKyle.setSurname("Broflovski");
+        userKyle.setEmail("kyle@jakubstas.com");
+        userKyle.setAvatar(avatarKyleBytes);
+        userKyle.setLastUpdated(new Date());
 
-        users.put(userJakub.getUserName(), userJakub);
-        users.put(userPeter.getUserName(), userPeter);
+        users.put(userStan.getUserName(), userStan);
+        users.put(userKyle.getUserName(), userKyle);
     }
 
     public User findByUserName(final String userName) {
