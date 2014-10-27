@@ -7,7 +7,7 @@ About
 This project was created to enhance my microseries on integration of Swagger with Jersey 2 in Spring application. For further information check out following posts from series called Spring Rest API with Swagger:
  
 1. [Integration and configuration](http://jakubstas.com/spring-jersey-swagger-configuration)
-2. [Creating documentation](http://jakubstas.com/spring-jersey-swagger-create-documentation) (not released yet)
+2. [Creating documentation](http://jakubstas.com/spring-jersey-swagger-create-documentation)
 3. [Exposing documentation](http://jakubstas.com/spring-jersey-swagger-expose-documentation) (not released yet)
 4. [Fine-tuning exposed documentation](http://jakubstas.com/spring-jersey-swagger-fine-tuning-exposed-documentation) (not released yet)
 
