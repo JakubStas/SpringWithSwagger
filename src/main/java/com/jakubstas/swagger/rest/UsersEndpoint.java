@@ -147,7 +147,7 @@ public class UsersEndpoint {
     @Path("/{userName}/avatar")
     @Produces("image/png")
     @ApiOperation(value = "Returns users avatar", notes = "Provides means to download avatar based on username")
-    @ApiResponses(value = { @ApiResponse(code = 200, message = "Successful retrieval of users avatar", response = User.class),
+    @ApiResponses(value = { @ApiResponse(code = 200, message = "Successful retrieval of users avatar"),
             @ApiResponse(code = 404, message = "User with given username does not exist"), @ApiResponse(code = 500, message = "Internal server error") })
     public Response getUsersAvatar(@ApiParam(name = "userName", value = "Alphanumeric login to application", required = true) @PathParam("userName") String userName) {
         final User user = userService.findByUserName(userName);
@@ -167,7 +167,7 @@ public class UsersEndpoint {
     @Consumes(MediaType.MULTIPART_FORM_DATA)
     @ApiImplicitParams(@ApiImplicitParam(dataType = "file", name = "avatar", paramType = "body"))
     @ApiOperation(value = "Updates users avatar", notes = "Provides means to upload new versions of avatar based on username")
-    @ApiResponses(value = { @ApiResponse(code = 200, message = "Successful retrieval of users avatar", response = User.class),
+    @ApiResponses(value = { @ApiResponse(code = 200, message = "Successful retrieval of users avatar"),
             @ApiResponse(code = 404, message = "User with given username does not exist"), @ApiResponse(code = 500, message = "Internal server error") })
     public Response updateUsersAvatar(@ApiParam(name = "userName", value = "Alphanumeric login to application", required = true) @PathParam("userName") String userName,
             @ApiParam(access = "hidden") @FormDataParam("avatar") InputStream avatarInputStream) {
