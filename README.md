@@ -9,7 +9,7 @@ This project was created to enhance my microseries on integration of Swagger wit
 1. [Integration and configuration](http://jakubstas.com/spring-jersey-swagger-configuration)
 2. [Creating documentation](http://jakubstas.com/spring-jersey-swagger-create-documentation)
 3. [Exposing documentation](http://jakubstas.com/spring-jersey-swagger-exposing-documentation)
-4. [Fine-tuning exposed documentation](http://jakubstas.com/spring-jersey-swagger-fine-tuning-exposed-documentation) (not released yet)
+4. [Fine-tuning exposed documentation](http://jakubstas.com/spring-jersey-swagger-fine-tuning-exposed-documentation)
 
 Try it out!
 -----------
