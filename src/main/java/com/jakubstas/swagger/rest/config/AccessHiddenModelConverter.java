@@ -3,7 +3,6 @@ package com.jakubstas.swagger.rest.config;
 import java.beans.IntrospectionException;
 import java.beans.Introspector;
 import java.beans.PropertyDescriptor;
-import java.lang.annotation.Annotation;
 import java.lang.reflect.Method;
 
 import javax.xml.bind.annotation.XmlElement;
@@ -16,7 +15,6 @@ import scala.Option;
 import scala.collection.immutable.Map;
 
 import com.wordnik.swagger.annotations.ApiModelProperty;
-import com.wordnik.swagger.annotations.ApiParam;
 import com.wordnik.swagger.converter.SwaggerSchemaConverter;
 import com.wordnik.swagger.model.Model;
 
@@ -54,20 +52,6 @@ public class AccessHiddenModelConverter extends SwaggerSchemaConverter {
 
     private void hideModelProperty(final Class<?> currentClass, final Method method, final Option<Model> modelOption) {
         final String propertyName;
-
-        for (final Annotation[] parameterAnnotations : method.getParameterAnnotations()) {
-            for (final Annotation annotation : parameterAnnotations) {
-                if (annotation instanceof ApiParam) {
-                    final ApiParam apiParam = (ApiParam) annotation;
-
-                    if (!apiParam.access().isEmpty()) {
-                        if (apiParam.access().equals("hidden")) {
-                            modelOption.get().properties();
-                        }
-                    }
-                }
-            }
-        }
 
         if (method.isAnnotationPresent(XmlElement.class) && !method.getAnnotation(XmlElement.class).name().isEmpty()) {
             propertyName = method.getAnnotation(XmlElement.class).name();
