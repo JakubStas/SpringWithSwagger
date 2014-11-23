@@ -21,6 +21,8 @@ public class User {
 
     private Date lastUpdated;
 
+    private final String oneToBeHidden = "hiddenOne";
+
     @ApiModelProperty(position = 1, required = true, value = "username containing only lowercase letters or numbers")
     public String getUserName() {
         return userName;
@@ -58,7 +60,6 @@ public class User {
     }
 
     @JsonIgnore
-    @ApiModelProperty(access = "hidden")
     public byte[] getAvatar() {
         return avatar;
     }
@@ -74,5 +75,10 @@ public class User {
 
     public void setLastUpdated(Date lastUpdated) {
         this.lastUpdated = lastUpdated;
+    }
+
+    @ApiModelProperty(access = "hidden")
+    public String getOneToBeHidden() {
+        return oneToBeHidden;
     }
 }

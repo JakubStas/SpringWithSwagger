@@ -19,7 +19,7 @@ public class Product {
 
     private String description;
 
-    private String oneToBeHidden;
+    private final String oneToBeHidden = "hiddenOne";
 
     @ApiModelProperty(required = true)
     @XmlElement(name = "name", nillable = false, required = true)
@@ -52,12 +52,7 @@ public class Product {
     }
 
     @ApiModelProperty(access = "hidden")
-    @XmlElement(name = "hiddenFromApiDoc", nillable = false, required = true)
     public String getOneToBeHidden() {
         return oneToBeHidden;
-    }
-
-    public void setOneToBeHidden(String oneToBeHidden) {
-        this.oneToBeHidden = oneToBeHidden;
     }
 }
