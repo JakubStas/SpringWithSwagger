@@ -1,6 +1,6 @@
 Spring with Swagger example
 =================
-This project is a simple example of integration of Swagger with Spring application (with Jersey 2).
+This project is a simple example of integration of Swagger with Spring 3 application (with Jersey 2).
 
 About
 -----
